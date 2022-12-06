@@ -20,6 +20,15 @@ $micro-color: #beb173;
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'centurygothic-bold';
+}
+
 body {
     font-family: 'centurygothic';
 }
@@ -173,9 +182,11 @@ header {
     }
 }
 
+.row-container {
+    margin-top: -50px;
+}
+
 .row {
-    position: absolute;
-    bottom: 50px;
 
     img {
         width: fit-content;
@@ -194,9 +205,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: fit-content;
     right: 0;
     bottom: 0;
+    width: fit-content;
     padding: 30px;
     color: #fff;
     background-color: rgba(0, 0, 0, .7);
@@ -226,11 +237,47 @@ header {
     border: 3px solid $micro-color;
     width: fit-content;
     transform: skew(-25deg);
-    padding: 10px 15px;
+    padding: 12px 30px;
 
     a {
-        font-weight: bold;
+        font-family: 'centurygothic-bold';
         color: $micro-color;
+        display: inline-block;
         transform: skew(25deg);
     }
+}
+
+.pros-cons {
+    display: flex;
+    flex-flow: row nowrap;
+
+    ul {
+        list-style: none;
+    }
+
+}
+
+.cons {
+    padding: 0 10px;
+    width: 50%;
+
+    li {
+        padding-left: 45px;
+
+        &::before {
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            content: '\f57a';
+            font: var(--fa-font-solid);
+            color: $micro-color;
+            font-size: 30px;
+            position: absolute;
+        }
+    }
+}
+
+.pros {
+    padding: 0 10px;
+    width: 50%;
 }

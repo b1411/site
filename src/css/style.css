@@ -16,6 +16,15 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "centurygothic-bold";
+}
+
 body {
   font-family: "centurygothic";
 }
@@ -153,10 +162,10 @@ header {
   margin-left: -5px;
 }
 
-.row {
-  position: absolute;
-  bottom: 50px;
+.row-container {
+  margin-top: -50px;
 }
+
 .row img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -174,11 +183,11 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  right: 0;
-  bottom: 0;
   padding: 30px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
@@ -208,10 +217,42 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   transform: skew(-25deg);
-  padding: 10px 15px;
+  padding: 12px 30px;
 }
 .btn-phone a {
-  font-weight: bold;
+  font-family: "centurygothic-bold";
   color: #beb173;
+  display: inline-block;
   transform: skew(25deg);
+}
+
+.pros-cons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.pros-cons ul {
+  list-style: none;
+}
+
+.cons {
+  padding: 0 10px;
+  width: 50%;
+}
+.cons li {
+  padding-left: 45px;
+}
+.cons li::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f57a";
+  font: var(--fa-font-solid);
+  color: #beb173;
+  font-size: 30px;
+  position: absolute;
+}
+
+.pros {
+  padding: 0 10px;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
