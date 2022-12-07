@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/ui-components-master/itc-slider.min.css">
-    <script src="https://kit.fontawesome.com/7bc2153d85..js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7bc2153d85.js" crossorigin="anonymous"></script>
     <script src="/src/ui-components-master/itc-slider.min.js" defer></script>
 </head>
 
@@ -54,11 +54,12 @@
 
     <main>
         <div class="slider">
-            <div class="itc-slider">
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000">
                 <div class="itc-slider__wrapper">
                     <div class="itc-slider__items">
                         <div class="itc-slider__item">
                             <img src="/src/img/slides/slide1.jpg" alt="">
+                            <img src="/src/img/slides/slider_bg.png" alt="" class="img-bg">
                             <div class="slider-text">
                                 <h3></h3>
                                 <p></p>
@@ -66,6 +67,7 @@
                         </div>
                         <div class="itc-slider__item">
                             <img src="/src/img/slides/slide2.jpg" alt="">
+                            <img src="/src/img/slides/slider_bg.png" alt="" class="img-bg">
                             <div class="slider-text">
                                 <h3></h3>
                                 <p></p>
@@ -73,6 +75,7 @@
                         </div>
                         <div class="itc-slider__item">
                             <img src="/src/img/slides/slide3.jpg" alt="">
+                            <img src="/src/img/slides/slider_bg.png" alt="" class="img-bg">
                             <div class="slider-text">
                                 <h3></h3>
                                 <p></p>
@@ -80,6 +83,7 @@
                         </div>
                         <div class="itc-slider__item">
                             <img src="/src/img/slides/slide4.jpg" alt="">
+                            <img src="/src/img/slides/slider_bg.png" alt="" class="img-bg">
                             <div class="slider-text">
                                 <h3></h3>
                                 <p></p>
@@ -87,6 +91,7 @@
                         </div>
                         <div class="itc-slider__item">
                             <img src="/src/img/slides/slide5.jpg" alt="">
+                            <img src="/src/img/slides/slider_bg.png" alt="" class="img-bg">
                             <div class="slider-text">
                                 <h3></h3>
                                 <p></p>
@@ -94,9 +99,9 @@
                         </div>
                     </div>
                 </div>
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
             </div>
-            <button class="itc-slider__btn itc-slider__btn_prev"></button>
-            <button class="itc-slider__btn itc-slider__btn_next"></button>
         </div>
         <section class="about">
             <img src="/src/img/bg/img-8.jpg" alt="">

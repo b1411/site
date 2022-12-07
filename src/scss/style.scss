@@ -154,8 +154,27 @@ header {
     height: 100%;
 }
 
+.itc-slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.itc-slider__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .about {
     position: relative;
+    min-height: 760px;
 
     img {
         width: 60%;
@@ -189,7 +208,8 @@ header {
 }
 
 .row-container {
-    margin-top: -50px;
+    position: absolute;
+    bottom: 50px;
 }
 
 .row {
