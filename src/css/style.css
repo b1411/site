@@ -82,6 +82,10 @@ header {
   margin-top: -15px;
 }
 
+.cont-wrap {
+  background-color: #fff;
+}
+
 .header-nav {
   display: inline-block;
 }
@@ -206,9 +210,6 @@ header {
   color: #fff;
   font-size: 32px;
 }
-.callback .callback-tittle span {
-  font-weight: bold;
-}
 
 .btn-phone {
   margin: 35px auto 0;
@@ -225,6 +226,7 @@ header {
   color: #beb173;
   display: inline-block;
   transform: skew(25deg);
+  font-size: 18px;
 }
 
 .work-container {
@@ -292,4 +294,41 @@ header {
   color: #fff;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.4);
   margin-top: 25px;
+}
+
+.advantages {
+  background-image: url("/src/img/bg/bg-4.jpg");
+}
+
+.adv-wrap {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+.adv-wrap h2 {
+  margin-bottom: 55px;
+}
+
+.adv-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.adv-row img {
+  width: 55px;
+  height: 55px;
+}
+
+.col {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+.col h4 {
+  text-align: left;
+  color: #474d51;
+  margin: 10px 0;
+}
+.col p {
+  font-size: 18px;
+  color: #242424;
 }/*# sourceMappingURL=style.css.map */
