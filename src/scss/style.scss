@@ -363,3 +363,35 @@ header {
         color: #242424;
     }
 }
+
+.for-cont {
+    padding: 50px 0;
+    h2 {
+        color: #474d51;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 35px 0;
+        justify-content: space-between;
+        li {
+            width: 20%;
+            position: relative;
+            font-size: 18px;
+            padding: 0 20px;
+            color: #242424;
+            &::before {
+                font: var(--fa-font-regular);
+                color: $micro-color;
+                font-size: 45px;
+                display: block;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                padding: 10px 0;
+                content: '\f14a';
+            }
+        }
+    }
+}
+
