@@ -156,6 +156,51 @@ header {
   left: 0;
 }
 
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 auto;
+}
+.slider-text h3 {
+  font-size: 85px;
+  text-transform: none;
+  margin-bottom: 40px;
+  font-family: centurygothic-bold;
+}
+.slider-text h3:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  margin: 0 auto;
+}
+.slider-text h3:first-child::after {
+  background-color: red;
+}
+.slider-text h3:not(:first-child):not(:last-child)::after {
+  background-color: #beb173;
+}
+.slider-text h3:last-child::after {
+  display: none;
+}
+.slider-text h3:first-child {
+  color: red;
+}
+.slider-text p {
+  font-size: 32px;
+  text-transform: none;
+  font-weight: 400;
+}
+.slider-text p:first-child {
+  color: #242424;
+}
+
 .about {
   position: relative;
   min-height: 760px;
