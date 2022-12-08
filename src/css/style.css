@@ -446,7 +446,6 @@ footer {
 .footer-cont {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
 }
 
 .footer-elem {
@@ -461,13 +460,14 @@ footer {
 }
 
 .footer-text ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   list-style: none;
+  padding: 0 15px;
 }
 .footer-text ul li {
   transform: skew(25deg);
   padding: 5px 0;
+  max-width: 300px;
+}
+.footer-text ul li i {
+  padding: 0 10px;
 }/*# sourceMappingURL=style.css.map */
