@@ -62,6 +62,9 @@ header {
   padding: 10px 0;
   list-style: none;
 }
+.langs ul {
+  margin: 15px 0;
+}
 .langs li {
   display: inline-block;
 }
@@ -130,7 +133,19 @@ header {
   transform: skew(25deg);
 }
 .contacts ul li a {
+  font-family: centurygothic-bold;
+  font-size: 18px;
   color: black;
+}
+.contacts ul li a span {
+  color: #beb173;
+}
+
+.time {
+  padding-left: 25px;
+}
+.time span {
+  font-family: centurygothic-bold;
 }
 
 .slider {
@@ -181,25 +196,30 @@ header {
   height: 2px;
   margin: 0 auto;
 }
-.slider-text h3:first-child::after {
-  background-color: red;
-}
-.slider-text h3:not(:first-child):not(:last-child)::after {
-  background-color: #beb173;
-}
-.slider-text h3:last-child::after {
-  display: none;
-}
-.slider-text h3:first-child {
-  color: red;
-}
 .slider-text p {
   font-size: 32px;
   text-transform: none;
   font-weight: 400;
 }
-.slider-text p:first-child {
+
+.text1 h3 {
+  color: red;
+}
+.text1 h3:after {
+  background-color: red;
+}
+.text1 p {
   color: #242424;
+}
+
+.text2 h3 {
+  color: #beb173;
+}
+.text2 h3:after {
+  background-color: #beb173;
+}
+.text2 p {
+  color: #fff;
 }
 
 .about {
@@ -270,6 +290,30 @@ header {
   padding: 30px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.increment {
+  background-color: #fff;
+  padding: 8px 20px;
+  margin: 0 0 20px 15px;
+  transform: skew(-25deg);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.increment span {
+  display: block;
+  font-size: 36px;
+  font-family: centurygothic-bold;
+  transform: skew(25deg);
+}
+
+.inc-odd {
+  color: #242424;
+}
+
+.inc-even {
+  color: #beb173;
 }
 
 .callback {
@@ -480,7 +524,8 @@ footer {
 }
 .feedback-form input {
   margin: 10px 15px;
-  padding: 5px 10px;
+  height: 40px;
+  width: 200px;
 }
 .feedback-form button {
   margin: 10px 15px;
@@ -488,7 +533,7 @@ footer {
   border: 2px solid #fff;
   background-color: transparent;
   color: #beb173;
-  min-width: 160px;
+  width: 200px;
   font-size: 18px;
   font-family: "centurygothic-bold";
 }/*# sourceMappingURL=style.css.map */

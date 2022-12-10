@@ -66,6 +66,9 @@ header {
     margin-left: 300px;
     padding: 10px 0;
     list-style: none;
+    ul {
+        margin: 15px 0;
+    }
 
     li {
         display: inline-block;
@@ -144,9 +147,22 @@ header {
             transform: skew(25deg);
 
             a {
+                font-family: centurygothic-bold;
+                font-size: 18px;
                 color: black;
+                span {
+                    color: $micro-color;
+
+                }
             }
         }
+    }
+}
+
+.time {
+    padding-left: 25px;
+    span {
+        font-family: centurygothic-bold;
     }
 }
 
@@ -197,22 +213,6 @@ header {
             height: 2px;
             margin: 0 auto;
         }
-
-        &:first-child::after {
-            background-color: red;
-        }
-
-        &:not(:first-child):not(:last-child)::after {
-            background-color: $micro-color;
-        }
-
-        &:last-child::after {
-            display: none;
-        }
-
-        &:first-child {
-            color: red;
-        }
     }
 
     p {
@@ -220,11 +220,37 @@ header {
         text-transform: none;
         font-weight: 400;
 
-        &:first-child {
-            color: #242424;
+
+    }
+
+}
+
+.text1 {
+    h3 {
+        color: red;
+
+        &:after {
+            background-color: red;
         }
     }
 
+    p {
+        color: #242424;
+    }
+}
+
+.text2 {
+    h3 {
+        color: $micro-color;
+
+        &:after {
+            background-color: $micro-color;
+        }
+    }
+
+    p {
+        color: #fff;
+    }
 }
 
 .about {
@@ -298,6 +324,29 @@ header {
     padding: 30px;
     color: #fff;
     background-color: rgba(0, 0, 0, .7);
+}
+
+.increment {
+    background-color: #fff;
+    padding: 8px 20px;
+    margin: 0 0 20px 15px;
+    transform: skew(-25deg);
+    width: max-content;
+
+    span {
+        display: block;
+        font-size: 36px;
+        font-family: centurygothic-bold;
+        transform: skew(25deg);
+    }
+}
+
+.inc-odd {
+    color: #242424;
+}
+
+.inc-even {
+    color: #beb173;
 }
 
 .callback {
@@ -505,6 +554,7 @@ footer {
     border-right: 1px solid #fff;
     transform: skew(-25deg);
     padding: 0 15px;
+
     h3 {
         margin-bottom: 10px;
         transform: skew(25deg);
@@ -515,10 +565,12 @@ footer {
     ul {
         list-style: none;
         padding: 0 15px;
+
         li {
             transform: skew(25deg);
             padding: 5px 0;
             max-width: 300px;
+
             i {
                 padding: 0 10px;
             }
@@ -530,17 +582,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     input {
         margin: 10px 15px;
-        padding: 5px 10px;
+        height: 40px;
+        width: 200px;
     }
+
     button {
         margin: 10px 15px;
         padding: 5px 10px;
         border: 2px solid #fff;
         background-color: transparent;
         color: $micro-color;
-        min-width: 160px;
+        width: 200px;
         font-size: 18px;
         font-family: 'centurygothic-bold';
     }
