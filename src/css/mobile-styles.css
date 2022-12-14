@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 1170px) {
+  .container-fluid {
+    display: none;
+  }
   .footer-cont {
     display: flex;
     justify-content: center;
@@ -13,11 +16,6 @@
     display: none;
   }
   .footer-cont .footer-nav {
-    display: none;
-  }
-}
-@media (max-width: 1170px) {
-  .container-fluid {
     display: none;
   }
   .header-cont {

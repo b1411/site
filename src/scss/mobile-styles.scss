@@ -7,6 +7,10 @@ $micro-color: #beb173;
 }
 
 @media (max-width: 1170px) {
+    .container-fluid {
+        display: none;
+    }
+
     .footer-cont {
         display: flex;
         justify-content: center;
@@ -18,13 +22,6 @@ $micro-color: #beb173;
         .footer-nav {
             display: none;
         }
-    }
-}
-
-
-@media  (max-width: 1170px) {
-    .container-fluid {
-        display: none;
     }
 
     .header-cont {

@@ -381,7 +381,7 @@ header {
 
 .pros-cons {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 .pros-cons h3 {
   margin-bottom: 10px;
