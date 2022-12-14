@@ -6,7 +6,7 @@ $micro-color: #beb173;
     box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1170px) {
     .container-fluid {
         display: none;
     }
@@ -23,6 +23,7 @@ $micro-color: #beb173;
         .logo {
             position: static;
             margin: 0;
+            padding: 10px 0;
             display: block;
         }
 
@@ -82,6 +83,50 @@ $micro-color: #beb173;
                 &::after {
                     display: none;
                 }
+            }
+        }
+    }
+
+    .relative-contacts {
+        display: block !important;
+        position: absolute; 
+        top: 100%;
+        right: 0;
+        transform: skew(0deg);
+        background-color: rgba($color: #fff, $alpha: .9);
+        width: 100%;
+        ul {
+            padding: 0;
+            margin: 0;
+            transform: skew(0deg);
+            li {
+                display: block;
+                background-color: transparent;
+                text-align: center;
+                padding: 10px 0;
+                transform: skew(0deg);
+                a {
+                    color: black;
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+
+                &:first-child {
+                    border-top: 1px solid #fff;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }  
+        .time {
+            text-align: center;   
+            padding: 0;
+            margin: 0;
+            i {
+                padding-right: 10px;
             }
         }
     }

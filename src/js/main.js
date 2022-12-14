@@ -32,4 +32,4 @@ function adaptiveNav(idOfBtn, idOfAdaptiveElement, nameOfClass) {
 }
 
 adaptiveNav('ahb', 'header-nav', 'relative');
-adaptiveNav('apb', 'contacts', 'relative');
+adaptiveNav('apb', 'contacts', 'relative-contacts');

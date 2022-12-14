@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
@@ -52,7 +52,7 @@ a {
 
 
 header {
-    position: sticky;
+    position: sticky;   
     top: 0;
     left: 0;
     right: 0;
@@ -67,6 +67,7 @@ header {
     position: absolute;
     display: block;
     top: -15px;
+    left: calc(50% - 585px);
 }
 
 .icon {
@@ -79,8 +80,9 @@ header {
 
 .header-cont {
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
     position: relative;
+    justify-content: center;
 }
 
 .adaptive-header-btn {
@@ -93,6 +95,7 @@ header {
 
 .header-nav {
     display: inline-block;
+
 }
 
 .navbar {
@@ -125,6 +128,7 @@ header {
     display: inline-block;
     position: absolute;
     top: -22px;
+    right: calc(50% - 585px);
     background-color: #fff;
     transform: skew(-25deg);
     font-size: 18px;
@@ -155,7 +159,18 @@ header {
     padding-left: 25px;
     span {
         font-family: centurygothic-bold;
+        font-size: 18px;
+    } 
+    i {
+        transform: skew(25deg);
+        padding-right: 10px;
     }
+}
+
+.time-clock {
+    font-size: 18px;
+    color: $micro-color;
+    font-family: centurygothic-bold;
 }
 
 .slider {
@@ -286,6 +301,7 @@ header {
     position: absolute;
     display: block;
     bottom: 50px;
+    max-width: 1170px;
     width: 100%;
     padding: 50px 0;
     left: 50%;
@@ -294,6 +310,7 @@ header {
 
 .row {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
     img {
@@ -305,6 +322,7 @@ header {
 .elem {
     position: relative;
     display: inline-block;
+    justify-self: center;
 }
 
 .info {
@@ -313,7 +331,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    width: fit-content;
+    width: 255px;
     padding: 30px;
     color: #fff;
     background-color: rgba(0, 0, 0, .7);
