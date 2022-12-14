@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/ui-components-master/itc-slider.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/mobile-styles.css">
     <script src="https://kit.fontawesome.com/7bc2153d85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/css/mobile-styles.css">
     <script src="/src/ui-components-master/itc-slider.min.js" defer></script>
@@ -18,23 +19,14 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="container">
-                <div class="langs">
-                    <ul>
-                        <!-- <li><a href="">Рус</a></li>
-                        <li><a href="">Қаз</a></li>
-                        <li><a href="">Eng</a></li> -->
-                    </ul>
-                </div>
-            </div>
         </div>
         <div class="cont-wrap">
-            <div class="container header-cont">
+            <div class="header-cont">
+                <div id="ahb" class="adaptive-header-btn">&#9776;</div>
                 <div class="logo"><a href="index.html"><img src="/src/img/logo/logo.png" alt=""></a></div>
 
-                <div class="icon" id="menu">&#9776;</div>
+                <nav class="header-nav" id="header-nav">
 
-                <nav class="header-nav">
                     <ul class="navbar">
                         <li><a href="">О нас</a></li>
                         <li><a href="">Отзывы</a></li>
@@ -44,7 +36,10 @@
                         <li><a href="">Полезная информация</a></li>
                     </ul>
                 </nav>
-                <div class="contacts">
+
+                <div class="adaptive-phone-btn" id="apb"><i class="fa-solid fa-phone"></i></div>
+
+                <div class="contacts" id="contacts">
                     <ul>
                         <li><a href="tel://"><span>+7 (727) </span>123 45 67</a></li>
                         <li><a href=""><span>+7 (727) </span>123 45 67</a></li>

@@ -14,3 +14,22 @@ for (let i = 0; i < animatedLi.length; i++) {
 }
 
 AOS.init();
+
+function adaptiveNav(idOfBtn, idOfAdaptiveElement, nameOfClass) {
+    let ahb = document.getElementById(idOfBtn);
+    let nav = document.getElementById(idOfAdaptiveElement);
+
+    document.addEventListener('click', function (e) {
+        if (e.target.id === idOfBtn) {
+            nav.classList.toggle(nameOfClass);
+        }
+    });
+    document.addEventListener('click', function (e) {
+        if (e.target.id !== idOfBtn && nav.classList.contains(nameOfClass)) {
+            nav.classList.remove(nameOfClass);
+        }
+    });
+}
+
+adaptiveNav('ahb', 'header-nav', 'relative');
+adaptiveNav('apb', 'contacts', 'relative');

@@ -1,20 +1,88 @@
-@media screen and (max-width: 1024px) and (min-width: 425px) {
+$micro-color: #beb173;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .container-fluid {
         display: none;
     }
+
+    .header-cont {
+        background-color: $micro-color;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+        position: relative;
+
+        .logo {
+            position: static;
+            margin: 0;
+            display: block;
+        }
+
+        .contacts {
+            display: none;
+        }
+    }
+
+    .adaptive-header-btn {
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .adaptive-phone-btn {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
     .header-nav {
         display: none;
     }
-    .contacts {
-        display: none;
+
+    .adaptive-nav {
+        position: absolute;
+        top: 100%;
     }
-    .logo {
-        position: static;
-        margin: 0;
-        
-    }
-    .header-cont {
-        display: flex;
-        flex-flow: row nowrap;
+
+    .relative {
+        position: absolute;
+        display: block;
+        width: 100%;
+        left: 0;
+        top: 100%;
+
+        .navbar {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: block;
+                background-color: #beb173;
+                text-align: center;
+                padding: 10px 0;
+                a {
+                    color: #fff;
+                }
+
+                &:first-child {
+                    border-top: 1px solid #fff;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
     }
 }

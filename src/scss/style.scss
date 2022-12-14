@@ -38,6 +38,7 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 a {
@@ -60,39 +61,12 @@ header {
 
 .container-fluid {
     background-color: $micro-color;
+    height: 30px;
 }
-
-.langs {
-    margin-left: 300px;
-    padding: 10px 0;
-    list-style: none;
-    ul {
-        margin: 15px 0;
-    }
-
-    li {
-        display: inline-block;
-
-        &::after {
-            content: '/';
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        &:last-child::after {
-            display: none;
-        }
-
-        a {
-            color: #fff;
-        }
-    }
-}
-
 .logo {
     position: absolute;
     display: block;
-    margin-top: -15px;
+    top: -15px;
 }
 
 .icon {
@@ -103,6 +77,20 @@ header {
     background-color: #fff;
 }
 
+.header-cont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.adaptive-header-btn {
+    display: none;
+}
+
+.adaptive-phone-btn {
+    display: none;
+}
+
 .header-nav {
     display: inline-block;
 }
@@ -110,7 +98,7 @@ header {
 .navbar {
 
     list-style: none;
-    margin: 10px 0 10px 255px;
+    margin: 10px 0;
     padding: 0 15px;
 
     li {
@@ -136,11 +124,12 @@ header {
 .contacts {
     display: inline-block;
     position: absolute;
-    margin-top: -22px;
+    top: -22px;
     background-color: #fff;
     transform: skew(-25deg);
     font-size: 18px;
     padding: 20px;
+    width: max-content;
 
     ul {
         position: relative;
@@ -149,7 +138,6 @@ header {
 
         li {
             transform: skew(25deg);
-
             a {
                 font-family: centurygothic-bold;
                 font-size: 18px;
@@ -566,7 +554,7 @@ footer {
     }
 }
 
-.footer-text {
+.footer-text {  
     ul {
         list-style: none;
         padding: 0 15px;

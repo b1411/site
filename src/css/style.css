@@ -34,6 +34,7 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 a {
@@ -55,35 +56,13 @@ header {
 
 .container-fluid {
   background-color: #beb173;
-}
-
-.langs {
-  margin-left: 300px;
-  padding: 10px 0;
-  list-style: none;
-}
-.langs ul {
-  margin: 15px 0;
-}
-.langs li {
-  display: inline-block;
-}
-.langs li::after {
-  content: "/";
-  display: inline-block;
-  margin: 0 5px;
-}
-.langs li:last-child::after {
-  display: none;
-}
-.langs li a {
-  color: #fff;
+  height: 30px;
 }
 
 .logo {
   position: absolute;
   display: block;
-  margin-top: -15px;
+  top: -15px;
 }
 
 .icon {
@@ -94,13 +73,27 @@ header {
   background-color: #fff;
 }
 
+.header-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.adaptive-header-btn {
+  display: none;
+}
+
+.adaptive-phone-btn {
+  display: none;
+}
+
 .header-nav {
   display: inline-block;
 }
 
 .navbar {
   list-style: none;
-  margin: 10px 0 10px 255px;
+  margin: 10px 0;
   padding: 0 15px;
 }
 .navbar li {
@@ -122,11 +115,14 @@ header {
 .contacts {
   display: inline-block;
   position: absolute;
-  margin-top: -22px;
+  top: -22px;
   background-color: #fff;
   transform: skew(-25deg);
   font-size: 18px;
   padding: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .contacts ul {
   position: relative;

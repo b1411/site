@@ -1,19 +1,74 @@
-@media screen and (max-width: 1024px) and (min-width: 425px) {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .container-fluid {
     display: none;
+  }
+  .header-cont {
+    background-color: #beb173;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+  }
+  .header-cont .logo {
+    position: static;
+    margin: 0;
+    display: block;
+  }
+  .header-cont .contacts {
+    display: none;
+  }
+  .adaptive-header-btn {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  .adaptive-phone-btn {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
   }
   .header-nav {
     display: none;
   }
-  .contacts {
-    display: none;
+  .adaptive-nav {
+    position: absolute;
+    top: 100%;
   }
-  .logo {
-    position: static;
+  .relative {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+  .relative .navbar {
+    padding: 0;
     margin: 0;
   }
-  .header-cont {
-    display: flex;
-    flex-flow: row nowrap;
+  .relative .navbar li {
+    display: block;
+    background-color: #beb173;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .relative .navbar li a {
+    color: #fff;
+  }
+  .relative .navbar li:first-child {
+    border-top: 1px solid #fff;
+  }
+  .relative .navbar li::after {
+    display: none;
   }
 }/*# sourceMappingURL=mobile-styles.css.map */
