@@ -65,6 +65,10 @@ header {
   top: -15px;
   left: calc(50% - 585px);
 }
+.logo a img {
+  width: 286px;
+  height: auto;
+}
 
 .icon {
   display: none;
@@ -248,7 +252,8 @@ header {
 
 .about-right {
   display: inline-block;
-  max-width: 340px;
+  max-width: 39%;
+  width: 340px;
   padding: 50px 30px;
 }
 .about-right h1 {
@@ -448,7 +453,7 @@ header {
 
 .adv-row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 .adv-row img {
   width: 55px;
@@ -456,7 +461,7 @@ header {
 }
 
 .col {
-  width: 25%;
+  width: 50%;
   padding: 0 15px;
   margin-bottom: 25px;
 }
@@ -479,16 +484,16 @@ header {
 .for-cont ul {
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding: 35px 0;
   justify-content: space-between;
 }
 .for-cont ul li {
-  width: 20%;
-  position: relative;
+  flex-basis: 20%;
   font-size: 18px;
   padding: 0 20px;
   color: #242424;
+  width: 100%;
 }
 .for-cont ul li::before {
   font: var(--fa-font-regular);

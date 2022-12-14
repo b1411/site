@@ -6,7 +6,23 @@ $micro-color: #beb173;
     box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1170px) {
+@media (max-width: 1170px) {
+    .footer-cont {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+
+        .footer-nav {
+            display: none;
+        }
+    }
+}
+
+
+@media  (max-width: 1170px) {
     .container-fluid {
         display: none;
     }
@@ -72,6 +88,7 @@ $micro-color: #beb173;
                 background-color: #beb173;
                 text-align: center;
                 padding: 10px 0;
+
                 a {
                     color: #fff;
                 }
@@ -89,24 +106,28 @@ $micro-color: #beb173;
 
     .relative-contacts {
         display: block !important;
-        position: absolute; 
+        position: absolute;
         top: 100%;
         right: 0;
         transform: skew(0deg);
         background-color: rgba($color: #fff, $alpha: .9);
         width: 100%;
+
         ul {
             padding: 0;
             margin: 0;
             transform: skew(0deg);
+
             li {
                 display: block;
                 background-color: transparent;
                 text-align: center;
                 padding: 10px 0;
                 transform: skew(0deg);
+
                 a {
                     color: black;
+
                     i {
                         padding-right: 10px;
                     }
@@ -120,14 +141,22 @@ $micro-color: #beb173;
                     display: none;
                 }
             }
-        }  
+        }
+
         .time {
-            text-align: center;   
+            text-align: center;
             padding: 0;
             margin: 0;
+
             i {
                 padding-right: 10px;
+                transform: skew(0deg);
             }
         }
+    }
+
+    .row-container {
+        position: static;
+        transform: translate(0, 0);
     }
 }

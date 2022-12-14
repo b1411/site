@@ -4,7 +4,19 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1170px) {
+@media (max-width: 1170px) {
+  .footer-cont {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-cont img {
+    display: none;
+  }
+  .footer-cont .footer-nav {
+    display: none;
+  }
+}
+@media (max-width: 1170px) {
   .container-fluid {
     display: none;
   }
@@ -112,5 +124,10 @@
   }
   .relative-contacts .time i {
     padding-right: 10px;
+    transform: skew(0deg);
+  }
+  .row-container {
+    position: static;
+    transform: translate(0, 0);
   }
 }/*# sourceMappingURL=mobile-styles.css.map */

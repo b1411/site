@@ -10,7 +10,7 @@ let animatedLi = document.querySelectorAll('body > main > section.for > div > ul
 
 for (let i = 0; i < animatedLi.length; i++) {
     animatedLi[i].setAttribute('data-aos', 'fade-up');
-    animatedLi[i].setAttribute('data-aos-duration', `${1500 - 10 * i}`)
+    animatedLi[i].setAttribute('data-aos-duration', `${1500}`)
 }
 
 AOS.init();
