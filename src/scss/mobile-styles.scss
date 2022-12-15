@@ -28,7 +28,7 @@ $micro-color: #beb173;
         background-color: $micro-color;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 0 100px;
         position: relative;
@@ -38,6 +38,11 @@ $micro-color: #beb173;
             margin: 0;
             padding: 10px 0;
             display: block;
+
+            img {
+                width: 180px;
+            }
+
         }
 
         .contacts {
@@ -51,6 +56,7 @@ $micro-color: #beb173;
         color: #fff;
         position: relative;
         cursor: pointer;
+        margin-right: 15px;
     }
 
     .adaptive-phone-btn {
@@ -58,6 +64,7 @@ $micro-color: #beb173;
         color: #fff;
         font-size: 22px;
         cursor: pointer;
+        margin-left: 15px;
     }
 
     .header-nav {
@@ -154,6 +161,56 @@ $micro-color: #beb173;
 
     .row-container {
         position: static;
+        padding-top: 0;
         transform: translate(0, 0);
+    }
+
+    .about-right {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .pros-cons {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .pros {
+            width: 100%;
+        }
+
+        .cons {
+            width: 100%;
+        }
+    }
+    .footer-cont {
+        flex-direction:  column;
+    }
+
+    .footer-elem {
+        transform: skew(0deg);
+        div ul li {
+            transform: skew(0deg);
+        }
+        div h3 {
+            transform: skew(0deg);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-fill-img {
+        display: none !important;
+    }
+    .for-cont ul {
+        flex-direction: column;
     }
 }

@@ -489,7 +489,7 @@ header {
   justify-content: space-between;
 }
 .for-cont ul li {
-  flex-basis: 20%;
+  flex-basis: 50%;
   font-size: 18px;
   padding: 0 20px;
   color: #242424;
