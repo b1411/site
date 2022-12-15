@@ -564,6 +564,9 @@ footer {
 }
 
 @media (max-width: 1170px) {
+  .slider-text h3 {
+    margin-bottom: 10px;
+  }
   .container-fluid {
     display: none;
   }
@@ -690,19 +693,18 @@ footer {
   }
   .row-container {
     position: static;
-    padding-top: 0;
     transform: translate(0, 0);
   }
   .about-right {
-    width: 100%;
+    width: 39%;
     max-width: 100%;
     padding: 15px;
   }
   .about-right h1 {
-    text-align: center;
+    text-align: left;
   }
   .about-right p {
-    text-align: center;
+    text-align: left;
   }
   .pros-cons {
     flex-direction: column;
@@ -719,6 +721,22 @@ footer {
   }
 }
 @media screen and (max-width: 767px) {
+  .about-right {
+    width: 100%;
+  }
+  .about-right h1 {
+    text-align: center;
+  }
+  .about-right p {
+    text-align: center;
+  }
+  .slider-text h3 {
+    font-size: 10vw;
+    margin-bottom: 10px;
+  }
+  .slider-text p {
+    font-size: 3vw;
+  }
   .about-fill-img {
     display: none !important;
   }
