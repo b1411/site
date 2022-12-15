@@ -33,3 +33,7 @@ function adaptiveNav(idOfBtn, idOfAdaptiveElement, nameOfClass) {
 
 adaptiveNav('ahb', 'header-nav', 'relative');
 adaptiveNav('apb', 'contacts', 'relative-contacts');
+
+const myModal = new HystModal({
+    linkAttributeName: "data-hystmodal",
+});

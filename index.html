@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/src/css/mobile-styles.css">
     <script src="/src/ui-components-master/itc-slider.min.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/src/hystModal/hystmodal.min.js"></script>
+    <link rel="stylesheet" href="/src/hystModal/hystmodal.min.css">
 </head>
 
 <body>
@@ -25,7 +27,8 @@
         <div class="cont-wrap">
             <div class="header-cont">
                 <div id="ahb" class="adaptive-header-btn">&#9776;</div>
-                <div class="logo"><a href="index.html"><img src="/src/img/logo/logo.png" alt="" class="logo-img"></a></div>
+                <div class="logo"><a href="index.html"><img src="/src/img/logo/logo.png" alt="" class="logo-img"></a>
+                </div>
 
                 <nav class="header-nav" id="header-nav">
 
@@ -157,7 +160,7 @@
                 <h3>Без грамотного финансового учета</h3>
                 <p>успешный бизнес не построишь</p>
             </div>
-            <div class="btn-phone"><a href="" data-target="#modal" data-toggle="model">Позвоните и узнайте
+            <div class="btn-phone"><a href="" data-hystmodal="#myModal">Позвоните и узнайте
                     как</a></div>
         </section>
         <section class="work">
@@ -237,7 +240,8 @@
                         <h4>Компетентность и профес&shy;сионализм
                         </h4>
                         <p>Огромный опыт работы и обслу&shy;живания клиентов в разных отраслях. Всегда идем в ногу с
-                            изменениями и требова&shy;ниями законо&shy;дательства. Система жесткого отбора сотрудников – у нас
+                            изменениями и требова&shy;ниями законо&shy;дательства. Система жесткого отбора сотрудников –
+                            у нас
                             остаются самые лучшие.</p>
                     </div>
                     <div class="col">
@@ -269,13 +273,15 @@
                         <h4>Защита Ваших интересов перед гос. органами
                         </h4>
                         <p>Вам не нужно самим идти в налоговый комитет.<br>
-                            Мы это сделаем за Вас: сопро&shy;вождаем проверки, защищаем и отстаиваем правоту клиента.</p>
+                            Мы это сделаем за Вас: сопро&shy;вождаем проверки, защищаем и отстаиваем правоту клиента.
+                        </p>
                     </div>
                     <div class="col">
                         <img src="/src/img/icons/lock.svg" alt="" class="col-icon">
                         <h4>Конфиден&shy;циальность сведений
                         </h4>
-                        <p>Гарантируем 100%-ную конфиден&shy;циальность финансовой информации и защиту персональных данных.
+                        <p>Гарантируем 100%-ную конфиден&shy;циальность финансовой информации и защиту персональных
+                            данных.
                         </p>
                     </div>
                     <div class="col">
@@ -356,6 +362,14 @@
             </div>
         </div>
     </footer>
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Close</button>
+                <!-- You modal HTML markup -->
+            </div>
+        </div>
+    </div>
     <script src="/src/js/main.js"></script>
 </body>
 
