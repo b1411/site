@@ -136,7 +136,7 @@ header {
     display: inline-block;
     position: absolute;
     top: -22px;
-    right: calc(50% - 585px);
+    right: calc(50% - 570px);
     background-color: #fff;
     transform: skew(-25deg);
     font-size: 18px;
@@ -381,10 +381,17 @@ header {
     background-size: cover;
     padding: 20px 0;
 
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
     .callback-tittle {
         text-align: center;
         color: #fff;
-        font-size: 32px;
     }
 }
 
@@ -395,6 +402,7 @@ header {
     transform: skew(-25deg);
     padding: 12px 15px;
     width: max-content;
+    transition: background-color .2s ease;
 
     a {
         font-family: 'centurygothic-bold';
@@ -402,6 +410,13 @@ header {
         display: inline-block;
         transform: skew(25deg);
         font-size: 18px;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $micro-color;
+        a {
+            color: #fff;
+        }
     }
 }
 
@@ -626,6 +641,35 @@ footer {
     }
 }
 
+.hystmodal__content {
+    padding: 20px;
+}
+
+.modal-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+        transform: skew(-25deg);
+    }
+    .input-wrap {
+        transform: skew(-25deg);
+        input {
+            width: 100%;
+            border: 1px solid #444444;
+            transform: skew(25deg);
+            padding: 10px 20px;
+            font-size: 16px;
+            outline: 0;
+        }
+    }
+}
 
 //adaptive design starts here
 

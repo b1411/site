@@ -303,7 +303,7 @@
                     </p>
 
                 </div>
-                <div class="btn-phone"><a href="" data-target="#modal" data-toggle="model">Записаться на
+                <div class="btn-phone"><a href="" data-hystmodal="#myModal">Записаться на
                         консультацию</a></div>
             </div>
         </section>
@@ -364,7 +364,18 @@
         <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Close</button>
-                <!-- You modal HTML markup -->
+                <div class="hystmodal__content">
+                    <div class="modal-cont">
+                        <h2>Записаться на консультацию</h2>
+                        <p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+                        <form action="">
+                            <div class="input_name input-wrap">
+                                <input type="text" name="name" placeholder="Введите имя">
+                            </div>
+                            <div class="input_number input-wrap">
+                                <input type="tel" name="number" placeholder="+7(___) ___-__-__">
+                            </div>
+                        </form>
             </div>
         </div>
     </div>
