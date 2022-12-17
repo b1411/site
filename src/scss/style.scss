@@ -68,7 +68,7 @@ header {
     position: absolute;
     display: block;
     top: -15px;
-    left: calc(50% - 585px);
+    left: calc(50% - 400px);
 
     a {
         img {
@@ -135,7 +135,7 @@ header {
     display: inline-block;
     position: absolute;
     top: -22px;
-    right: calc(50% - 570px);
+    right: calc(50% - 380px);
     background-color: #fff;
     transform: skew(-25deg);
     font-size: 18px;
@@ -411,8 +411,10 @@ header {
         font-size: 18px;
         text-decoration: none;
     }
+
     &:hover {
         background-color: $micro-color;
+
         a {
             color: #fff;
         }
@@ -657,8 +659,10 @@ footer {
         gap: 10px;
         transform: skew(-25deg);
     }
+
     .input-wrap {
         transform: skew(-25deg);
+
         input {
             width: 100%;
             border: 1px solid #444444;
@@ -689,6 +693,7 @@ footer {
             margin-bottom: 10px;
         }
     }
+
     .container-fluid {
         display: none;
     }
@@ -872,8 +877,9 @@ footer {
             width: 100%;
         }
     }
+
     .footer-cont {
-        flex-direction:  row;
+        flex-direction: row;
     }
 }
 
@@ -883,6 +889,7 @@ footer {
         h3 {
             font-size: 5vw;
         }
+
         p {
             font-size: 4vw;
         }
@@ -890,9 +897,11 @@ footer {
 
     .about-right {
         width: 100%;
+
         h1 {
             text-align: center;
         }
+
         p {
             text-align: center;
         }
@@ -903,6 +912,7 @@ footer {
             font-size: 10vw;
             margin-bottom: 10px;
         }
+
         p {
             font-size: 3vw;
         }
@@ -911,9 +921,11 @@ footer {
     .about-fill-img {
         display: none !important;
     }
+
     .for-cont ul {
         flex-direction: column;
         padding-bottom: 0;
+
         li {
             &::before {
                 display: inline-block;
@@ -922,15 +934,18 @@ footer {
             }
         }
     }
+
     .footer-cont {
-        flex-direction:  column;
+        flex-direction: column;
     }
 
     .footer-elem {
         transform: skew(0deg);
+
         div ul li {
             transform: skew(0deg);
         }
+
         div h3 {
             transform: skew(0deg);
         }
@@ -942,9 +957,10 @@ footer {
     .row {
         margin-left: calc(33% - 255px);
     }
+
     .elem {
         width: 33%;
-    }  
+    }
 }
 
 @media (max-width: 320px) {
